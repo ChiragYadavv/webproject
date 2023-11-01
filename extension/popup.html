@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassMan - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">PassMan</div>
+        <!-- <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul> -->
+    </nav>
+    <div class="container">
+        <!-- <h1>Password Manager</h1> -->
+        <h2>Your Passwords </h2> 
+        <span id="alert">Copied!</span>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr> 
+ 
+        </table>
+
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+
+            <!-- Text input for website -->
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <!-- Text input for username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <!-- Submit button -->
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="content.js"></script>
+</body>
+
+</html>
